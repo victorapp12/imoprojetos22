@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**********classes para tags**********/
+html, body{margin:0; padding:0; width:100%; height:100%; font-family:Arial, Helvetica, sans-serif; background:url(../imagens/fundo.jpg) left top repeat; font-size:14px; color:#666;}
+ul{list-style:none; margin:0 0 0 -40px;}
+li{float:left;}
+h2{margin:0 0 30px 0; font-size:14px; border-bottom:#ebecef thin solid;padding:10px 0;}
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;height:0;overflow:hidden;}
+
+
+/********classes gerais********/
+.geral{position:relative; width:100%; min-height:100%; margin:0; padding:0;}
+.conteudo{margin:0 auto; width:100%; padding-bottom:60px;}
+.link-imagem{display:inline-block; width:100%; height:100%;}
+.clear{clear:both;}
+#obrigatorio{color:#F00;}
+
+
+/**********classes do login**********/
+.login{width:365px; height:200px; margin:0 auto; top:100px; position:relative; background: url(../imagens/logo.png) left top no-repeat; padding: 100px 0 0 35px;}
+.login a{color:#666; display:inline-block; margin:20px 0 0 15px; cursor:pointer; text-decoration:underline;}
+.login a:hover{color:#000;}
+.login form{width:290px; height:180px; border:#ccc thin solid; margin:0 0 0 10px; background:#fff; padding:10px; -moz-border-radius:11px;-khtml-border-radius:11px;-webkit-border-radius:11px;border-radius:11px; -moz-box-shadow:rgba(200,200,200,1) 0 4px 18px;-webkit-box-shadow:rgba(200,200,200,1) 0 4px 18px;-khtml-box-shadow:rgba(200,200,200,1) 0 4px 18px;box-shadow:rgba(200,200,200,1) 0 4px 18px;}
+.login form label{display:block; margin:0 0 3px 20px;}
+.login form input{border:#CCC thin solid; height:22px; width:250px; margin:0 0 20px 20px; padding:5px 0 3px 3px; background-color:#f5f5f5;}
+.login form input:focus{border-color:#999;}
+.login form a{color:#069; margin:13px 0 0 20px; line-height:150%; text-decoration:none;}
+.login form span{color:#069; margin:8px 0 7px 10px; line-height:150%; display:inline-block;}
+.login form a:hover{color:#069; cursor:pointer; text-decoration:underline;}
+#botao-login{width:80px; height:25px; padding:0 0 1px 0; float:right; margin:5px 25px 0 0;}
+#botao-login:hover{border-color:#999; cursor:pointer; color:#000;}
+.alerta-erro{min-height:30px; color:#F00; font-weight:bold; font-size:14px; margin:0 0 0 20px;}
+.alerta-sucesso{min-height:30px; color:#090; font-weight:bold; font-size:14px; margin:0 0 0 20px;}
+.login h1{font-size:18px; text-align:center;}
+
+
+/********classes do topo*********/
+.topo{width:100%; min-height:60px; background-color:#555; border-bottom:#D9D6DA thin solid; position:relative;}
+.logo{width:250px; height:40px; background:url(../imagens/logo-mini.png) left 10px no-repeat; float:left; margin:10px 0 0 10px;}  
+.logo span{display:none;}
+
+.menu{float:left; margin:0 0 0 20px; max-width:60%; line-height:150%;}
+.menu ul{margin:10px 0 0 -40px;}
+.menu li{padding:5px 12px; width:auto;}
+.menu a{text-transform:uppercase; text-decoration:none; color:#999; font-weight:bold;}
+.menu a:hover{text-decoration:underline; color:#ccc;}
+
+.menu-usuario{float:right; height:46px; width:150px; overflow:hidden; position:absolute; top:6px; right:10px;}
+.menu-usuario img{border:#f4f4f4 thin solid;}
+.menu-usuario span{width:60px; height:42px; float:right; padding:2px; display:inline-block; background:url(../imagens/seta.png) 50px 20px no-repeat;}
+.menu-usuario li{width:150px; padding:0; border-bottom:#f4f4f4 thin solid;}
+.menu-usuario a{background-color:#666; color:#ccc; padding:10px 5px; display:block; text-decoration:none; font-weight:bold;}
+.menu-usuario a:hover{background-color:#333; color:#ccc;}
+
+
+/********classes do submenu*********/
+.submenu{width:100%; background-color:#fff; border-bottom:#CCC thin solid;}
+.submenu h1{padding:4px 0 4px 2%; display:inline-block; font-size:16px;}
+.submenu ul{float:right; margin:15px 2% 0 0;}
+.submenu li{text-transform:uppercase; font-weight:bold; padding:0 0 0 15px;}
+.submenu a{text-decoration:none; color:#666;}
+.submenu a:hover{text-decoration:underline;}
+
+
+/******classes dos filtro das tabelas********/
+.filtro{width:96%; margin:20px 2%;}
+.filtro span{padding:10px 0 0 0; display:inline-block;}
+.filtro form{float:right;}
+.campo-busca{height:16px; padding:5px 0 3px 3px; border:#CCC thin solid; width:200px; float:left;}
+.botao-busca{border:#ccc thin solid; height:24px; float:right;}
+.filtro select{width:220px; border:#CCC thin solid; height:25px; float:left; margin:0 20px 0 0;}
+.filtro a{color:#069;}
+.filtro a:hover{text-decoration:none;}
+
+
+/******classes da paginacao***********/
+.espaco_numeros{float:right; margin:5px 2%;}
+.numeros{width:21px; height:21px; padding:3px; text-align:center; border:1px solid #f4f4f4; margin-right:2px; font-size:11px; cursor:pointer; marker-top:10px;}
+.numeros:hover{background-color:#333; color:#fff;}
+.ativo{background-color:#666; color:#fff;}
+
+
+/********classes das tabelas********/
+table{width:96%; height:auto; margin:20px 2% 0 2%; background-color:#f4f4f4; border-right:#CCC thin solid; border-bottom:#CCC thin solid; border-top:#CCC thin solid; text-align:center;}
+table th{height:25px; padding-left:3px; color:#464646; background-color:#e1e1e1; border-left:#CCC thin solid;}
+table tr{height:57px;}
+table td{padding:10px 5px; border-top:#CCC thin solid; border-left:#CCC thin solid;}
+table a{color:#666; text-decoration:underline;}
+table a:hover{color:#999; text-decoration:none;}
+
+
+/******classes dos formularios********/
+.formulario{margin:2% 0 0 2%; background-color:#FFF; border:#ebecef thin solid; padding:10px; max-width:800px; min-width:300px;}
+.formulario span{display:inline-block; margin:0 5px 3px 0;}
+.formulario textarea, .formulario input, .formulario select{min-width:300px; width:50%; height:30px; border:#ccc thin solid; margin:0 0 30px 0; padding:0 0 0 3px;}
+.formulario textarea{height:100px;}
+.formulario .radio{min-width:18px; width:18px; height:12px;}
+.formulario span.texto-radio{margin:0 20px 3px 0;}
+.formulario .rotulo{margin:0 0 12px 0; display:inline-block;}
+.formulario fieldset{background: #f6f6f6; border:#ccc 1px solid; padding:20px; margin-bottom:40px;}
+.formulario #excluir{float:right; margin-right:20px;}
+label.error {display:none; color:#F00;}
+#botao-form{min-width:150px; width:150px; background-color:#f4f4f4;}
+#botao-form:hover{color:#333; border-color:#666; cursor:pointer;}
+.concluir{margin:0 2%; text-decoration:none; color:#069; font-size:14px;}
+.concluir:hover{text-decoration:underline;}
+
+.comentario{margin:60px 0 0 2%; background-color:#FFF; border:#ebecef thin solid; padding:10px; max-width:800px; min-width:300px;}
+.item-comentario{background: #f6f6f6; border:#ccc 1px solid; padding:20px; margin-bottom:40px; position:relative;}
+.comentario textarea{height:80px; width:96%;}
+.comentario ul{list-style:disc; margin-left:0;}
+.comentario li{float:none;}
+.comentario input{height:30px; border:#ccc thin solid; margin:0 0 30px 0; padding:0 0 0 3px;}
+.comentario .data{font-size:10px;}
+.comentario .excluir-item{position:absolute; top: 10px; right:10px;}
+
+.controle{margin:60px 0 0 2%; background-color:#FFF; border:#ebecef thin solid; padding:10px; max-width:800px; min-width:300px;}
+.item-controle{background: #f6f6f6; border:#ccc 1px solid; padding:20px; margin-bottom:40px; position:relative; line-height:150%;}
+
+.item-fotos{float:left; margin:0 20px 20px 0;}
+
+/*******classes das informações********/
+.informacoes{margin:2% 0 0 2%; background-color:#FFF; border:#ebecef thin solid; padding:10px 10px 20px 10px; max-width:800px; min-width:300px;}
+.informacoes p{margin:0 0 10px 0; line-height: 150%;}
+.informacoes span{font-weight:bold; display:inline-block; margin:0 10px 0 0;}
+.informacoes a{color:#069; text-decoration:none;}
+.informacoes a:hover{text-decoration:underline;}
+
+.informacoes a.btn-aprovar{background-color: #9c0; color: #fff; text-transform: uppercase; padding: 10px 20px; font-size: 20px; border-radius: 8px; box-shadow: 1px 1px 1px #999; margin: 40px 10px 40px -260px; display: inline-block; position: relative; left: 50%; width: 210px; text-align: center;}
+.informacoes a.btn-reprovar{margin: 40px 0; background-color: #df2626;}
+.informacoes a.btn-aprovar:hover{text-decoration:none; color:#333;}
+
+
+/********Status************/
+#status-vermelho{background:#facccd;color:#f00;padding:2px;}
+#status-verde{background:#c9efa6;color:#060;padding:2px;}
+#status-amarelo{background:#f8f0bb;color:#928445;padding:2px;}
+#status-cinza{background:#e3e3e3;color:#666;padding:2px;}
+
+
+/********Galeria de Fotos******/
+.box-fotos{width:720px;overflow:hidden;margin:0 20px;padding-bottom:40px;position:relative;}
+.lista-fotos{width:8640px; margin:0; padding:0;}
+.lista-fotos li{float:left;}
+.esq,.dir{position:absolute;display:block;width:50px;height:50px;background:#666666;color:#f3f3f3;font-size:50px;text-align:center;line-height:48px;border-radius:25px;top:335px;}
+.esq:hover,.dir:hover{cursor:pointer;background:#f07122;}
+.esq{left:20px;display:none;}
+.dir{right:20px;}
+.marcadores{text-align:center;position:relative;top:-40px;}
+.marcadores li{width:15px;height:15px;background:#666666;display:inline-block;border-radius:7px;cursor:pointer; float:none;}
+.marcadores li:hover{background:#f07122;}
+.marcadores li.marcador-ativo{background:#f07122;}
+
